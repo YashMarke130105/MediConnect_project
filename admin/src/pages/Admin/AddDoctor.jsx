@@ -125,7 +125,6 @@ const AddDoctor = () => {
                             <p>Fees</p>
                             <input onChange={e => setFees(e.target.value)} value={fees} className='border rounded px-3 py-2' type="number" placeholder='Doctor fees' required />
                         </div>
-
                     </div>
 
                     <div className='w-full lg:flex-1 flex flex-col gap-4'>

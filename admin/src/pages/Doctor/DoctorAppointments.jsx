@@ -56,7 +56,6 @@ const DoctorAppointments = () => {
           </div>
         ))}
       </div>
-
     </div>
   )
 }

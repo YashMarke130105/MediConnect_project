@@ -61,7 +61,7 @@ const appointmentCancel = async (req, res) => {
 const addDoctor = async (req, res) => {
 
     try {
-
+   
         const { name, email, password, speciality, degree, experience, about, fees, address } = req.body
         const imageFile = req.file
 
@@ -85,8 +85,8 @@ const addDoctor = async (req, res) => {
         const hashedPassword = await bcrypt.hash(password, salt)
 
         // upload image to cloudinary
-        const imageUpload = await cloudinary.uploader.upload(imageFile.path, { resource_type: "image" })
-        const imageUrl = imageUpload.secure_url
+            const imageUpload = await cloudinary.uploader.upload(imageFile.path, { resource_type: "image" })
+            const imageUrl = imageUpload.secure_url
 
         const doctorData = {
             name,
